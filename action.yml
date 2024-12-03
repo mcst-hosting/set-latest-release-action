@@ -1,0 +1,9 @@
+name: 'Set release as latest'
+description: 'Sets a release as the latest release'
+inputs:
+  github-token:
+    description: 'GitHub API Token'
+    required: true
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
