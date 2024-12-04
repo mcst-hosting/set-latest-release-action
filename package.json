@@ -2,7 +2,6 @@
   "name": "fleco",
   "version": "1.0.0",
   "main": "index.ts",
-  "type": "module",
   "author": "Shane C.",
   "devDependencies": {
     "@types/node": "^20.8.7",
