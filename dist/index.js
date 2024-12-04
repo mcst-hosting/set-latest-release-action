@@ -29955,7 +29955,7 @@ async function run() {
     const release = await octokit.rest.repos.getReleaseByTag({
         owner: actionContext.repo.owner,
         repo: actionContext.repo.repo,
-        tag: actionContext.ref,
+        tag: actionContext.ref.replace("refs/tags/", ""),
     });
     await octokit.rest.repos.updateRelease({
         owner: actionContext.repo.owner,
